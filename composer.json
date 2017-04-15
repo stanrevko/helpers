@@ -1,0 +1,22 @@
+{
+  "name": "successus/helpers",
+  "type": "library",
+  "description": "PHP Helpers functions and classes",
+  "homepage": "https://github.com/successus/helpers",
+  "license": [
+    "MIT",
+    "GPL-3.0"
+  ],
+  "authors": [
+    {
+      "name": "Stas Revko",
+      "email": "stas.revko@gmail.com",
+      "homepage": "https://github.com/successus"
+    }
+  ],
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1.x-dev"
+    }
+  }
+}
