@@ -1,5 +1,7 @@
 <?php
 
+namespace successus\helpers;
+
 class Cache
 {
     private $_salt = "s23nd435n3"; // <-- change before usage!
