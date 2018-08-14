@@ -25,5 +25,20 @@ class Arrays
         }
         return $res;
     }
+    
+    public static function implodeMulti($glue, $array) {
+        $ret = '';
+        foreach ($array as $item) {
+            if (is_array($item)) {
+                $ret .= self::implodeMulti($glue, $item) . $glue;
+            } else {
+                $ret .= $item . $glue;
+            }
+        }
+
+        $ret = substr($ret, 0, 0-strlen($glue));
+
+        return $ret;
+    }
 
 }
