@@ -28,12 +28,16 @@ class Arrays
     
     public static function implodeMulti($glue, $array) {
         $ret = '';
-        foreach ($array as $item) {
-            if (is_array($item)) {
-                $ret .= self::implodeMulti($glue, $item) . $glue;
-            } else {
-                $ret .= $item . $glue;
+        if(is_array($array)){
+            foreach ($array as $item) {
+                if (is_array($item)) {
+                    $ret .= self::implodeMulti($glue, $item) . $glue;
+                } else {
+                    $ret .= $item . $glue;
+                }
             }
+        }else{
+            $ret = $array;
         }
 
         $ret = substr($ret, 0, 0-strlen($glue));
