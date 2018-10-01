@@ -25,7 +25,7 @@ class Arrays
         }
         return $res;
     }
-    
+
     public static function implodeMulti($glue, $array) {
         $ret = '';
         if(is_array($array)){

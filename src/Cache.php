@@ -1,5 +1,4 @@
 <?php
-
 namespace successus\helpers;
 
 class Cache

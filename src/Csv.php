@@ -34,4 +34,12 @@ class Csv
         return $result;
     }
 
+    static function saveRows($file, array $rows){
+        $fp = fopen($file, 'w');
+        foreach ($rows as $row){
+            fputcsv($fp, $row);
+        }
+        fclose($fp);
+    }
+
 }
